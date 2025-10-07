@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_16-00-05",
+            "content": "@@ -98,15 +98,8 @@\n elf)\n- -%3E str\n :%0A  \n@@ -125,17 +125,16 @@\n _tamanho\n- \n %0A    %0A  \n@@ -367,38 +367,13 @@\n !%22)%0A\n+%0A\n     \n-    self.__tamanho = valor\n %0Adef\n@@ -440,59 +440,11 @@\n == %22\n+ \n %22:\n-%0A        print(%22Digite o tamanho da sua camisa!%22)\n %0A   \n@@ -509,22 +509,8 @@\n or)%0A\n-        break%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-07_16-13-31",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n    \n    def  getTamanho(self) -> str:\n        return self.__tamanho \n    \n    def setTamanho(self, valor: str) -> None:\n        if valor != \"PP\" or valor != \"P\" or valor != \"M\" or valor != \"G\" or valor != \"GG\" or valor != \"XG\":\n            print(\"Tamanho inv\u00e1lido! Digite tamanho de roupa, meu parceiro!\")\n        self.__tamanho = valor\ndef main():\n    camisa = Camisa()\n\n    while camisa.getTamanho == \"\":\n        print(\"Digite o tamanho da sua camisa!\")\n        valor = input().upper()\n        camisa.setTamanho(valor)\n        break\n    \n    print(\"Parab\u00e9ns, voc\u00ea comprou uma roupa tamanho\", camisa.getTamanho())\n\nmain()\n",
+            "lines": "23"
+        }
+    ]
+}

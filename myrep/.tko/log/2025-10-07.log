@@ -1,0 +1,7 @@
+2025-10-07 15:40:18, MOVE, v:1, k:poo@camisa, mode:DOWN
+2025-10-07 16:00:04, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-07 16:00:05, EXEC, v:1, k:poo@camisa, mode:FREE, size:22
+2025-10-07 16:13:19, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-07 16:13:29, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-07 16:13:31, EXEC, v:1, k:poo@camisa, mode:FREE, size:23
+2025-10-07 16:43:48, MOVE, v:1, k:poo@camisa, mode:BACK
