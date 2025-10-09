@@ -1,0 +1,5 @@
+2025-10-09 00:31:33, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-09 00:31:36, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:33
+2025-10-09 00:31:38, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-09 00:32:43, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-09 00:32:44, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100, size:33
