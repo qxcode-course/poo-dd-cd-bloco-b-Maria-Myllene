@@ -20,3 +20,8 @@
 2025-10-13 00:26:57, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:28
 2025-10-13 00:26:59, EXEC, v:1, k:poo@chinela, mode:FREE
 2025-10-13 00:27:42, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-13 00:34:09, SELF, v:1, k:poo@chinela, rate:100, human:sim, alone:7, study:100
+2025-10-13 00:34:19, SELF, v:1, k:poo@chinela, rate:100, human:sim, alone:7, study:100
+2025-10-13 00:35:12, SELF, v:1, k:poo@camisa, rate:100, human:sim, alone:7, study:60
+2025-10-13 00:36:44, SELF, v:1, k:poo@roupa, rate:100, alone:10, study:40
+2025-10-13 00:37:16, SELF, v:1, k:poo@relogio, rate:100, human:sim, alone:8, study:125
