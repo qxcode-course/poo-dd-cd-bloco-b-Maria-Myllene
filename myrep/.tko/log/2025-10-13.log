@@ -1,0 +1,22 @@
+2025-10-13 00:05:43, EXEC, v:1, k:poo@relogio, mode:FULL, rate:84, size:84
+2025-10-13 00:06:15, EXEC, v:1, k:poo@relogio, mode:FULL, rate:84, size:81
+2025-10-13 00:07:31, EXEC, v:1, k:poo@relogio, mode:FULL, rate:84, size:83
+2025-10-13 00:08:06, EXEC, v:1, k:poo@relogio, mode:FULL, rate:15, size:82
+2025-10-13 00:08:43, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76, size:82
+2025-10-13 00:10:03, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:82
+2025-10-13 00:10:17, EXEC, v:1, k:poo@relogio, mode:FULL, rate:53, size:82
+2025-10-13 00:22:51, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100, size:92
+2025-10-13 00:24:15, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100, size:89
+2025-10-13 00:24:17, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-13 00:24:44, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-13 00:24:45, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100
+2025-10-13 00:24:57, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-13 00:26:03, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-13 00:26:05, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0, size:24
+2025-10-13 00:26:08, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0
+2025-10-13 00:26:30, EXEC, v:1, k:poo@camisa, mode:FREE
+2025-10-13 00:26:51, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-13 00:26:55, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-13 00:26:57, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0, size:28
+2025-10-13 00:26:59, EXEC, v:1, k:poo@chinela, mode:FREE
+2025-10-13 00:27:42, MOVE, v:1, k:poo@chinela, mode:BACK

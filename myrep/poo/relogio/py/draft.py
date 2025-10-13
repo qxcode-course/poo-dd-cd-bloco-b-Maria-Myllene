@@ -45,10 +45,19 @@ class Tempo:
                 self.__hora += 1
         if self.__hora == 23:
             self.__hora = 0
-    
-    def horaInit
-        
 
+    def init (self, hora: int, minuto: int, segundo: int):
+        self.setHour(hora)
+        self.setMinute(minuto)
+        self.setSecond(segundo)
+        if hora > 23 or hora < 0:
+            self.__hora = 0
+        if minuto > 59 or minuto < 0:
+            self.__min = 0
+        if segundo > 59 or segundo < 0:
+            self.__seg = 0
+
+        
 def main():
     relogio = Tempo(0, 0, 0)
 
@@ -74,12 +83,7 @@ def main():
             hora = int(args[1])
             minuto = int(args[2])
             segundo = int(args[3])
-            relogio.setHour(hora)
-            relogio.setMinute(minuto)
-            relogio.setSecond(segundo)
-            relogio.__init__(hora, minuto, segundo)
-            if hora > 23 or hora < 0:
-                hora = 0
+            relogio.init(hora, minuto, segundo)
         else:
             print("fail: comando invalido")
 main()

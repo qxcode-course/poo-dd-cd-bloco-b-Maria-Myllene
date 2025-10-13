@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2025-10-06_16-38-32",
-            "content": "",
+            "content": "@@ -1,733 +0,0 @@\n-class Chinela:%0A    def __init__ (self):%0A        self.__tamanho: int = 0%0A    %0A    def setTamanho (self, numeracao: int):%0A        if numeracao %3E 50 or numeracao %3C 20:%0A            print(%22Tamanho inv%C3%A1lido! Limite: 20-50%22)%0A            return%0A        if numeracao %25 2 == 1:%0A            print (%22Valor inv%C3%A1lido: digite uma numera%C3%A7%C3%A3o par.%22)%0A            return%0A        self.__tamanho = numeracao%0A%0A    def getTamanho (self):%0A        return self.__tamanho%0A%0Adef main():%0A    chinela = Chinela()%0A%0A    while chinela.getTamanho() == 0:%0A        print(%22Digite o n%C3%BAmero da sua chinela%22)%0A        numeracao = int(input())%0A        chinela.setTamanho(numeracao)%0A    %0A    print(%22Parab%C3%A9ns, voc%C3%AA comprou uma chinela tamanho%22, chinela.getTamanho())%0A%0Amain()%0A    \n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-13_00-26-57",
+            "content": "class Chinela:\n    def __init__ (self):\n        self.__tamanho: int = 0\n    \n    def setTamanho (self, numeracao: int):\n        if numeracao > 50 or numeracao < 20:\n            print(\"Tamanho inv\u00e1lido! Limite: 20-50\")\n            return\n        if numeracao % 2 == 1:\n            print (\"Valor inv\u00e1lido: digite uma numera\u00e7\u00e3o par.\")\n            return\n        self.__tamanho = numeracao\n\n    def getTamanho (self):\n        return self.__tamanho\n\ndef main():\n    chinela = Chinela()\n\n    while chinela.getTamanho() == 0:\n        print(\"Digite o n\u00famero da sua chinela\")\n        numeracao = int(input())\n        chinela.setTamanho(numeracao)\n    \n    print(\"Parab\u00e9ns, voc\u00ea comprou uma chinela tamanho\", chinela.getTamanho())\n\nmain()\n    ",
+            "lines": "28"
         }
     ]
 }
