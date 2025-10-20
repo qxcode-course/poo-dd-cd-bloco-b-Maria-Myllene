@@ -11,7 +11,7 @@ class Tempo:
         if hora > 23 or hora < 0:
             print("fail: hora invalida")
             return
-        self.__hora = hora
+        self.__hora = hora  
 
     def setMinute (self, minuto: int):
         if minuto > 59 or minuto < 0:
