@@ -45,8 +45,23 @@ class Moto:
     def buyTime(self, time: int):
         self.__tempo += time
     
-    def drive(time: int):
+    def drive(self, drive: int):
+        if self.__tempo == 0:
+            print("fail: buy time first")
+        elif self.__pessoa == None:
+            print("fail: empty motorcycle")
+        elif self.__pessoa.getAge() > 10:
+            print("fail: too old to drive")
+        elif self.__tempo < drive:
+                print (f"fail: time finished after {self.__tempo} minutes")
+                self.__tempo = 0
+        else:
+            self.__tempo -= drive
 
+    def honk (self):
+        buzina = "P" + ("e" * self.__potencia) + "m"
+        print(buzina)
+        
 
 def main():
     moto = Moto(1, 0, "")
@@ -74,8 +89,10 @@ def main():
             time = int(args[1])
             moto.buyTime(time)
         elif args[0] == "drive":
-            time = int(args[1])
-            moto.drive()
+            drive = int(args[1])
+            moto.drive(drive)
+        elif args[0] == "honk":
+            moto.honk()
         else: 
             print("fail: comando invalido")
 
