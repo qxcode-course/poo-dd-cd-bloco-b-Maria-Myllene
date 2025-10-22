@@ -57,7 +57,7 @@ class Moto:
                 self.__tempo = 0
         else:
             self.__tempo -= drive
-
+ 
     def honk (self):
         buzina = "P" + ("e" * self.__potencia) + "m"
         print(buzina)
