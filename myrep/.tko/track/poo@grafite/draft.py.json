@@ -1,0 +1,284 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_15-31-55",
+            "content": "@@ -1,532 +0,0 @@\n-class Lead:%0A    def __init__ (self, size: int):%0A        self.__size: int = size%0A        self.__thickness: float = %5B0.3, 0.5, 0.7%5D%0A        self.__hardness: str = %5B%22HB%22, %222B%22, %224B%22, %226B%22%5D%0A%0Aclass Pencil:%0A    def __init__(self, thickness: Lead):%0A        self.__thickness = None%0A%0Adef main():%0A    grafite = Lead (0)%0A%0A    while True:%0A        line = input()%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        print(%22$%22 + line)%0A%0A        if args %5B0%5D == %22end%22:%0A            break%0A        else:%0A            print(%22fail: comando invalido%22)%0A%0Amain()\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-26_09-41-44",
+            "content": "@@ -42,41 +42,8 @@\n  int\n-, thickness: float, hardness: str\n ):%0A \n@@ -107,25 +107,31 @@\n float = \n-thickness\n+%5B0.3, 0.5, 0.7%5D\n %0A       \n@@ -154,24 +154,41 @@\n : str = \n-hardness\n+%5B%22HB%22, %222B%22, %224B%22, %226B%22%5D%0A\n %0Aclass P\n@@ -270,92 +270,8 @@\n None\n-%0A    %0A    def setInit (self, lapiseira: float):%0A        self.__thickness = lapiseira\n %0A%0Ade\n@@ -464,147 +464,8 @@\n eak%0A\n-        if args %5B0%5D == %22init%22:%0A            thickness = int(args%5B1%5D)%0A            graf = Pencil(thickness)%0A            grafite.setInit(graf)%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-26_09-55-21",
+            "content": "@@ -399,17 +399,8 @@\n d (0\n-, 0.0, %22%22\n )%0A%0A \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-26_09-55-46",
+            "content": "@@ -618,20 +618,18 @@\n kness = \n-floa\n+in\n t(args%5B1\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-26_17-48-06",
+            "content": "@@ -652,20 +652,22 @@\n  graf = \n-Lead\n+Pencil\n (thickne\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-26_17-48-56",
+            "content": "@@ -657,19 +657,16 @@\n  = Lead(\n-0, \n thicknes\n@@ -666,20 +666,16 @@\n hickness\n-, %22%22\n )%0A      \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-26_17-53-25",
+            "content": "@@ -316,20 +316,21 @@\n iseira: \n-Lead\n+float\n ):%0A     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-26_17-55-17",
+            "content": "@@ -363,28 +363,8 @@\n eira\n-%0A        return True\n %0A%0Ade\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-26_17-55-41",
+            "content": "@@ -231,41 +231,13 @@\n lf, \n-size: Lead, thickness: Lead, hard\n+thick\n ness\n@@ -407,22 +407,20 @@\n afite = \n-Pencil\n+Lead\n  (0, 0.0\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-26_17-58-58",
+            "content": "@@ -762,66 +762,8 @@\n af)%0A\n-        if args %5B0%5D == %22show%22:%0A            print(grafite)%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-26_17-59-53",
+            "content": "@@ -313,159 +313,8 @@\n     \n-    self.__hardness = 0%0A        self.__size = 0%0A    %0A    def __str__ (self):%0A        return f%22calibre: %7Bself.__thickness%7D, grafite: %7Bself.__hardness%7D%22%0A\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-26_18-04-14",
+            "content": "@@ -300,19 +300,20 @@\n kness = \n-0.0\n+None\n %0A       \n@@ -327,28 +327,25 @@\n _hardness = \n-None\n+0\n %0A        sel\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-26_18-05-34",
+            "content": "@@ -362,107 +362,8 @@\n  = 0\n-%0A%0A    def setInit (self, lapiseira: Lead):%0A        self.__thickness = lapiseira%0A        return True\n %0A   \n@@ -463,16 +463,115 @@\n ness%7D%22%0A%0A\n+    def setInit (self, lapiseira: Lead):%0A        self.__thickness = lapiseira%0A        return True%0A%0A\n def main\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-26_18-06-23",
+            "content": "@@ -765,34 +765,32 @@\n   break%0A        \n-el\n if args %5B0%5D == %22\n@@ -919,18 +919,16 @@\n         \n-el\n if args \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-26_18-07-40",
+            "content": "@@ -194,79 +194,8 @@\n ess%0A\n-    %0A    def getThickness (self):%0A        return self.__thickness%0A    %0A\n clas\n@@ -534,23 +534,8 @@\n ness\n-.getThickness()\n %7D, g\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-26_18-09-28",
+            "content": "@@ -562,142 +562,8 @@\n f):%0A\n-        if self.__hardness == None:%0A            return f%22calibre: %7Bself.__thickness.getThickness()%7D, grafite: null%22%0A        else:%0A    \n     \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-26_18-12-30",
+            "content": "@@ -302,56 +302,138 @@\n lf, \n-thickness: float):%0A        self.__thickness = 0.\n+size: Lead, thickness: Lead, hardness: Lead):%0A        self.__thickness = 0.0%0A        self.__hardness = None%0A        self.__size = \n 0%0A%0A \n@@ -465,21 +465,20 @@\n iseira: \n-float\n+Lead\n ):%0A     \n@@ -1057,16 +1057,58 @@\n rgs%5B1%5D)%0A\n+            graf = Lead(0, thickness, %22%22)%0A\n         \n@@ -1127,25 +1127,20 @@\n setInit(\n-thickness\n+graf\n )%0A      \n@@ -1197,44 +1197,8 @@\n te)%0A\n-        elif args %5B0%5D == %22insert%22:%0A%0A\n     \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-26_18-15-59",
+            "content": "@@ -1075,16 +1075,52 @@\n rafite)%0A\n+        elif args %5B0%5D == %22insert%22:%0A%0A\n         \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-26_18-16-14",
+            "content": "@@ -736,18 +736,25 @@\n encil (0\n-.0\n+, 0.0, %22%22\n )%0A%0A    w\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-26_18-17-06",
+            "content": "@@ -265,67 +265,8 @@\n    %0A\n-    def getHardness(self):%0A        return self.__hardness%0A%0A\n clas\n@@ -351,39 +351,8 @@\n  0.0\n-%0A        self.__hardness = None\n %0A%0A  \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-26_18-19-17",
+            "content": "@@ -403,21 +403,19 @@\n kness = \n- None\n+0.0\n %0A       \n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-26_18-19-38",
+            "content": "@@ -644,32 +644,47 @@\n self.__thickness\n+.getThickness()\n %7D, grafite: null\n@@ -746,16 +746,31 @@\n hickness\n+.getThickness()\n %7D, grafi\n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-26_18-20-33",
+            "content": "@@ -24,24 +24,35 @@\n nit__ (self,\n+ size: int,\n  thicknessGr\n@@ -45,28 +45,24 @@\n t, thickness\n-Graf\n : float, har\n@@ -71,18 +71,34 @@\n ess: str\n-, \n+):%0A        self.__\n size: in\n@@ -98,18 +98,23 @@\n ize: int\n-):\n+ = size\n %0A       \n@@ -130,20 +130,16 @@\n hickness\n-Graf\n : float \n@@ -145,28 +145,24 @@\n  = thickness\n-Graf\n %0A        sel\n@@ -198,36 +198,8 @@\n     \n-  \n-  self.__size: int = size%0A\n %0A   \n@@ -259,12 +259,8 @@\n ness\n-Graf\n %0A   \n@@ -324,59 +324,8 @@\n ss%0A%0A\n-    def getSize(self):%0A        return self.__size%0A%0A\n clas\n@@ -443,32 +443,8 @@\n None\n-%0A        self.__size = 0\n %0A%0A  \n@@ -766,113 +766,25 @@\n s%7D%22%0A\n-    %0A    def setInsert (self, grafite: Lead):%0A        if self.__thickness != grafite.getThickness\n+%0Adef main\n ():%0A    \n     \n@@ -783,216 +783,15 @@\n     \n-   \n-     print(%22fail: calibre incompativel%22)%0A        self.__hardness = grafite.getHardness()%0A        self.__thickness = grafite.getThickness()%0A        self.__size = grafite.getSize()%0A%0Adef main():%0A    lapiseira\n+grafite\n  = P\n@@ -1039,33 +1039,31 @@\n             \n-lapiseira\n+grafite\n .setInit(thi\n@@ -1134,240 +1134,8 @@\n te)%0A\n-        elif args %5B0%5D == %22insert%22:%0A            thickness = float(args%5B1%5D)%0A            hardness = args%5B2%5D%0A            size = int(args%5B3%5D)%0A            grafite = Lead(thickness, hardness, size)%0A            lapiseira.setInsert(grafite)%0A\n     \n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-26_18-43-51",
+            "content": "@@ -1499,25 +1499,23 @@\n   print(\n-lapiseira\n+grafite\n )%0A      \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-10-26_18-45-17",
+            "content": "@@ -998,34 +998,16 @@\n tivel%22)%0A\n-        else:%0A    \n         \n@@ -1050,28 +1050,24 @@\n s()%0A        \n-  \n-  \n self.__thick\n@@ -1092,28 +1092,24 @@\n Thickness()%0A\n-    \n         self\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-10-26_18-45-50",
+            "content": "@@ -207,106 +207,8 @@\n ze%0A%0A\n-    def __str__ (self):%0A        return f%22%7Bself.__thicknessGraf%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%22%0A%0A\n     \n@@ -224,32 +224,32 @@\n ickness (self):%0A\n+\n         return s\n@@ -491,28 +491,47 @@\n f.__\n-grafite: Lead = None\n+hardness = None%0A        self.__size = 0\n %0A%0A  \n@@ -838,23 +838,24 @@\n %7Bself.__\n-grafite\n+hardness\n %7D%22%0A    %0A\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-26_18-51-28",
+            "content": "@@ -534,31 +534,16 @@\n s: float\n-, grafite: Lead\n ):%0A     \n@@ -592,16 +592,22 @@\n _grafite\n+: Lead\n  = None%0A\n@@ -1284,12 +1284,8 @@\n (0.0\n-, %22%22\n )%0A%0A \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-26_18-53-36",
+            "content": "@@ -762,23 +762,24 @@\n  self.__\n-grafite\n+hardness\n  == None\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-26_18-57-03",
+            "content": "@@ -1113,32 +1113,146 @@\n     \n+ \n self.__\n-grafite = grafite\n+hardness = grafite.getHardness()%0A            self.__thickness = grafite.getThickness()%0A            self.__size = grafite.getSize()\n %0A%0Ade\n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-26_18-58-42",
+            "content": "@@ -244,17 +244,16 @@\n eturn f%22\n-%5B\n %7Bself.__\n@@ -298,17 +298,16 @@\n .__size%7D\n-%5D\n %22%0A%0A    d\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-26_18-58-59",
+            "content": "@@ -1090,90 +1090,8 @@\n l%22)%0A\n-        elif self.__grafite != None:%0A            print(%22fail: ja existe grafite%22)%0A\n     \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-26_19-00-28",
+            "content": "@@ -1221,108 +1221,8 @@\n fite\n-%0A    %0A    def setRemove (self):%0A        if self.__grafite != None:%0A            self.__grafite = None\n %0A%0Ade\n@@ -1832,77 +1832,8 @@\n te)%0A\n-        elif args %5B0%5D == %22remove%22:%0A            lapiseira.getRemove()%0A\n     \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-10-26_19-03-46",
+            "content": "@@ -1985,17 +1985,17 @@\n piseira.\n-s\n+g\n etRemove\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-26_19-04-30",
+            "content": "@@ -1321,118 +1321,8 @@\n None\n-%0A    %0A    def setWrite(self):%0A        if self.__grafite == None:%0A            print(%22fail: nao existe grafite%22)\n %0A%0Ade\n@@ -2001,75 +2001,8 @@\n e()%0A\n-        elif args %5B0%5D == %22write%22:%0A            lapiseira.setWrite()%0A\n     \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-10-26_19-07-07",
+            "content": "@@ -1431,373 +1431,8 @@\n te%22)\n-%0A        elif self.__grafite.getHardness == %22HB%22:%0A            self.__grafite.getSize -= 1%0A        elif self.__grafite.getHardness == %222B%22:%0A            self.__grafite.getSize -= 2%0A        elif self.__grafite.getHardness == %224B%22:%0A            self.__grafite.getSize -= 4%0A        elif self.__grafite.getHardness == %226B%22:%0A            self.__grafite.getSize -= 6%0A        \n %0A%0Ade\n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-10-26_19-17-04",
+            "content": "@@ -487,76 +487,8 @@\n ze%0A%0A\n-    def setSize(self, tamanho: int):%0A        self.__size = tamanho%0A%0A\n clas\n@@ -1671,31 +1671,8 @@\n     \n-self.__grafite.setSize(\n self\n@@ -1695,11 +1695,11 @@\n ze -\n+=\n  4\n-)\n %0A   \n",
+            "lines": "87"
+        },
+        {
+            "label": "2025-10-26_19-20-10",
+            "content": "@@ -1780,18 +1780,16 @@\n .getSize\n-()\n  - 4)%0A  \n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-26_19-21-30",
+            "content": "@@ -1531,26 +1531,24 @@\n .getHardness\n-()\n  == %22HB%22:%0A  \n@@ -1575,26 +1575,24 @@\n fite.getSize\n-()\n  -= 1%0A      \n@@ -1620,26 +1620,24 @@\n .getHardness\n-()\n  == %222B%22:%0A  \n@@ -1664,26 +1664,24 @@\n fite.getSize\n-()\n  -= 2%0A      \n@@ -1709,26 +1709,24 @@\n .getHardness\n-()\n  == %224B%22:%0A  \n@@ -1827,18 +1827,16 @@\n Hardness\n-()\n  == %226B%22\n@@ -1871,18 +1871,16 @@\n .getSize\n-()\n  -= 6%0A  \n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-26_19-22-29",
+            "content": "@@ -1559,39 +1559,16 @@\n         \n-self.__grafite.getSize(\n self.__g\n@@ -1589,11 +1589,11 @@\n () -\n+=\n  1\n-)\n %0A   \n@@ -1652,39 +1652,16 @@\n         \n-self.__grafite.getSize(\n self.__g\n@@ -1682,11 +1682,11 @@\n () -\n+=\n  2\n-)\n %0A   \n@@ -1861,39 +1861,16 @@\n         \n-self.__grafite.getSize(\n self.__g\n@@ -1891,11 +1891,11 @@\n () -\n+=\n  6\n-)\n %0A   \n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-26_19-23-17",
+            "content": "@@ -1783,105 +1783,8 @@\n B%22:%0A\n-            if self.__grafite.getSize == 10:%0A                print(%22fail: tamanho insuficiente%22)%0A\n     \n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-26_19-26-48",
+            "content": "@@ -1945,27 +1945,8 @@\n  4)%0A\n-            return%0A\n     \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-26_19-27-20",
+            "content": "@@ -1880,30 +1880,8 @@\n e%22)%0A\n-            else:%0A    \n     \n@@ -1941,16 +1941,35 @@\n () - 4)%0A\n+            return%0A\n         \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-26_19-27-56",
+            "content": "@@ -1816,18 +1816,16 @@\n .getSize\n-()\n  == 10:%0A\n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-26_19-29-03",
+            "content": "@@ -1551,35 +1551,32 @@\n B%22:%0A            \n-if \n self.__grafite.g\n@@ -1586,126 +1586,8 @@\n ize(\n-) == 10:%0A                print(%22fail: tamanho insuficiente%22)%0A            else:%0A                self.__grafite.setSize(\n self\n@@ -1667,35 +1667,32 @@\n B%22:%0A            \n-if \n self.__grafite.g\n@@ -1702,126 +1702,8 @@\n ize(\n-) == 10:%0A                print(%22fail: tamanho insuficiente%22)%0A            else:%0A                self.__grafite.setSize(\n self\n@@ -1900,180 +1900,8 @@\n se:%0A\n-                if  self.__grafite.setSize(self.__grafite.getSize() - 4) != 10:%0A                    self.__grafite = 10%0A                    print(%22fail: folha incompleta%22)%0A\n     \n@@ -2020,35 +2020,32 @@\n B%22:%0A            \n-if \n self.__grafite.g\n@@ -2055,126 +2055,8 @@\n ize(\n-) == 10:%0A                print(%22fail: tamanho insuficiente%22)%0A            else:%0A                self.__grafite.setSize(\n self\n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-26_19-47-11",
+            "content": "@@ -2215,9 +2215,10 @@\n  4) \n-%3C\n+!=\n  10:\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-26_19-47-28",
+            "content": "@@ -2213,14 +2213,14 @@\n  - 4\n+)\n  %3C 10\n-)\n :%0A  \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-26_19-48-40",
+            "content": "@@ -553,35 +553,8 @@\n anho\n-%0A        return self.__size\n %0A%0Acl\n@@ -2213,14 +2213,14 @@\n  - 4\n-)\n  %3C 10\n+)\n :%0A  \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-26_19-55-07",
+            "content": "@@ -2278,26 +2278,16 @@\n _grafite\n-.getSize()\n  = 10%0A  \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_19-57-44",
+            "content": "@@ -2291,11 +2291,14 @@\n ize(\n+) = \n 10\n-)\n %0A   \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_19-58-17",
+            "content": "@@ -2275,25 +2275,25 @@\n f.__grafite.\n-s\n+g\n etSize(10)%0A \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_20-00-29",
+            "content": "@@ -2347,34 +2347,8 @@\n a%22)%0A\n-                else:%0A    \n     \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_20-01-50",
+            "content": "@@ -2153,35 +2153,56 @@\n )%0A            el\n+se:%0A                \n if \n+ \n self.__grafite.s\n@@ -2252,32 +2252,36 @@\n                 \n+    \n self.__grafite.s\n@@ -2299,32 +2299,36 @@\n                 \n+   \n+ \n print(%22fail: fol\n@@ -2347,38 +2347,46 @@\n a%22)%0A            \n+    \n else:%0A\n+    \n                 \n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-10-26_20-03-24",
+            "content": "@@ -2156,32 +2156,55 @@\n            elif \n+self.__grafite.setSize(\n self.__grafite.g\n@@ -2215,16 +2215,17 @@\n ze() - 4\n+)\n  %3C 10:%0A \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_20-08-11",
+            "content": "@@ -1677,151 +1677,8 @@\n e%22)%0A\n-            elif self.__grafite.getSize() - 1 %3C 10:%0A                self.__grafite.setSize(10)%0A                print(%22fail: folha incompleta%22)%0A\n     \n@@ -1683,32 +1683,32 @@\n           else:%0A\n+\n                 \n@@ -1914,151 +1914,8 @@\n e%22)%0A\n-            elif self.__grafite.getSize() - 2 %3C 10:%0A                self.__grafite.setSize(10)%0A                print(%22fail: folha incompleta%22)%0A\n     \n@@ -2467,32 +2467,32 @@\n etSize() == 10:%0A\n+\n                 \n@@ -2531,151 +2531,8 @@\n e%22)%0A\n-            elif self.__grafite.getSize() - 6 %3C 10:%0A                self.__grafite.setSize(10)%0A                print(%22fail: folha incompleta%22)%0A\n     \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_20-09-36",
+            "content": "@@ -1523,25 +1523,16 @@\n afite%22)%0A\n-        %0A\n         \n@@ -1570,24 +1570,24 @@\n () == %22HB%22:%0A\n+\n             \n@@ -1903,25 +1903,16 @@\n () - 1)%0A\n-        %0A\n         \n@@ -2283,25 +2283,16 @@\n () - 2)%0A\n-        %0A\n         \n@@ -2586,32 +2586,32 @@\n           else:%0A\n+\n                 \n@@ -2663,25 +2663,16 @@\n () - 4)%0A\n-        %0A\n         \n",
+            "lines": "115"
+        },
+        {
+            "label": "2025-10-26_20-55-55",
+            "content": "class Lead:\n    def __init__ (self, thicknessGraf: float, hardness: str, size: int):\n        self.__thicknessGraf: float = thicknessGraf\n        self.__hardness: str = hardness\n        self.__size: int = size\n\n    def __str__ (self):\n        return f\"[{self.__thicknessGraf}:{self.__hardness}:{self.__size}]\"\n\n    def getThickness (self):\n        return self.__thicknessGraf\n    \n    def getHardness(self):\n        return self.__hardness\n\n    def getSize(self):\n        return self.__size\n\n    def setSize(self, tamanho: int):\n        self.__size = tamanho\n        return self.__size\n\nclass Pencil:\n    def __init__(self, thickness: float, grafite: Lead):\n        self.__thickness =  None\n        self.__grafite = None\n\n    def setInit (self, lapiseira: float):\n        self.__thickness = lapiseira\n        return True\n    \n    def __str__ (self):\n        if self.__grafite == None:\n            return f\"calibre: {self.__thickness}, grafite: null\"\n        else:\n            return f\"calibre: {self.__thickness}, grafite: {self.__grafite}\"\n    \n    def setInsert (self, grafite: Lead):\n        if self.__thickness != grafite.getThickness():\n            print(\"fail: calibre incompativel\")\n        elif self.__grafite != None:\n            print(\"fail: ja existe grafite\")\n        else:\n           self.__grafite = grafite\n    \n    def setRemove (self):\n        if self.__grafite != None:\n            self.__grafite = None\n    \n    def setWrite(self):\n        if self.__grafite == None:\n            print(\"fail: nao existe grafite\")\n        \n        elif self.__grafite.getHardness() == \"HB\":\n            if self.__grafite.getSize() == 10:\n                print(\"fail: tamanho insuficiente\")\n            elif self.__grafite.getSize() - 1 < 10:\n                self.__grafite.setSize(10)\n                print(\"fail: folha incompleta\")\n            else:\n                self.__grafite.setSize(self.__grafite.getSize() - 1)\n        \n        elif self.__grafite.getHardness() == \"2B\":\n            if self.__grafite.getSize() == 10:\n                print(\"fail: tamanho insuficiente\")\n            elif self.__grafite.getSize() - 2 < 10:\n                self.__grafite.setSize(10)\n                print(\"fail: folha incompleta\")\n            else:\n                self.__grafite.setSize(self.__grafite.getSize() - 2)\n        \n        elif self.__grafite.getHardness() == \"4B\":\n            if self.__grafite.getSize() == 10:\n                print(\"fail: tamanho insuficiente\")\n            elif self.__grafite.getSize() - 4 < 10:\n                self.__grafite.setSize(10)\n                print(\"fail: folha incompleta\")\n            else:\n                self.__grafite.setSize(self.__grafite.getSize() - 4)\n        \n        elif self.__grafite.getHardness() == \"6B\":\n            if self.__grafite.getSize() == 10:\n                print(\"fail: tamanho insuficiente\")\n            elif self.__grafite.getSize() - 6 < 10:\n                self.__grafite.setSize(10)\n                print(\"fail: folha incompleta\")\n            else:\n                self.__grafite.setSize(self.__grafite.getSize() - 6)\n        \n\ndef main():\n    lapiseira = Pencil (0.0, \"\")\n\n    while True:\n        line = input()\n        args: list[str] = line.split(\" \")\n        print(\"$\" + line)\n\n        if args [0] == \"end\":\n            break\n        elif args [0] == \"init\":\n            thickness = float(args[1])\n            lapiseira.setInit(thickness)\n        elif args [0] == \"show\":\n            print(lapiseira)\n        elif args [0] == \"insert\":\n            thickness = float(args[1])\n            hardness = args[2]\n            size = int(args[3])\n            grafite = Lead(thickness, hardness, size)\n            lapiseira.setInsert(grafite)\n        elif args [0] == \"remove\":\n            lapiseira.setRemove()\n        elif args [0] == \"write\":\n            lapiseira.setWrite()\n        else:\n            print(\"fail: comando invalido\")\n\nmain()",
+            "lines": "119"
+        }
+    ]
+}
