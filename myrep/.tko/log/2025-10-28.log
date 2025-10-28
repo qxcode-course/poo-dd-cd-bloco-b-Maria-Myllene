@@ -1,0 +1,6 @@
+2025-10-28 15:42:17, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-28 15:42:19, EXEC, v:1, k:poo@motouber, mode:FULL, rate:100
+2025-10-28 15:42:20, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-28 15:43:07, SELF, v:1, k:poo@motouber, rate:100, iagen:sim, alone:7, study:180
+2025-10-28 15:43:25, SELF, v:1, k:poo@grafite, rate:100, iagen:sim, alone:7, study:180
+2025-10-28 15:43:43, SELF, v:1, k:poo@motoca, rate:100, iagen:s, alone:7, study:160
